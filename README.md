@@ -13,6 +13,10 @@ Simple docker-compose for Laravel, with postgresql, reddis, nginx and php-fpm
 # usage:
     ./setup.sh to begin the setup by answering a few simple questions the script will configure
     your new application for you to start development.
+    
+    Once this has completed open a web browser and go to http://localhost/ you should see the default Laravel page.
+    
+    Delete the ./setup.sh this will not be used after you create your project.
  
 # Images
 
