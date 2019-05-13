@@ -32,4 +32,4 @@ In the serverConfiguration directory the deploy folder this contains 2 docker fi
 # Configuring Elasticsearch
 For reference I tried using the following repo to setup elasticsearch in a demo project.
 
-    https://github.com/madewithlove/laravel-elasticsearch-demo/blob/master/database/migrations/2017_02_24_204051_create_articles_table.php
+    https://github.com/madewithlove/laravel-elasticsearch-demo
