@@ -50,6 +50,10 @@ docker exec -t $containername sh -c "cd $projectname && sed -i -e 's/3306/5432/g
 docker exec -t $containername sh -c "cd $projectname && sed -i -e 's/homestead/$dbusername/g' -e 's/secret/$dbpassword/g' .env"
 docker exec -t $containername sh -c "cd $projectname && sed -i -e 's/REDIS_HOST=127.0.0.1/REDIS_HOST=redis/g' .env"
 
+# insert lines to add elasticsearch to the .env file
+docker exec -t $containername sh -c "cd $projectname && sed '$ a \SEARCH_ENABLED=true' .env"
+docker exec -t $containername sh -c "cd $projectname && sed '$ a SEARCH_HOSTS=elasticsearch:9200' .env"
+
 # restart container so it connects to correct database
 docker restart $containername
 
