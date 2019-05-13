@@ -28,3 +28,8 @@ Simple docker-compose for Laravel, with postgresql, reddis, nginx and php-fpm
 
 # SourceFiles
 In the serverConfiguration directory the deploy folder this contains 2 docker files dev.app.docker for the laravel application and dev.web.docker for nginx also a dev.vhost.conf for nginx configuration.
+
+# Configuring Elasticsearch
+For reference I tried using the following repo to setup elasticsearch in a demo project.
+
+    https://github.com/madewithlove/laravel-elasticsearch-demo/blob/master/database/migrations/2017_02_24_204051_create_articles_table.php
